@@ -16,18 +16,20 @@ This Jupyter Notebook provides an **interactive frontend** for users and adminis
 ## 🛠️ Installation & Requirements
 
 ### 📌 Prerequisites
-Ensure you have **Python 3.7+** and **Jupyter Notebook** installed.
+Ensure you have **Python 3.12+** and **Jupyter Notebook** installed.
 
-Install required dependencies using:
+Install all required dependencies located at _requirements.txt_ or use the following command:
 
 ```bash
-pip install mercury pandas numpy scikit-learn
+pip install -r requirements.txt
 ```
 
 ### 🔧 Running the Notebook in the Browser
 ```bash
 mercury run
 ```
+
+You can access the Mercury frontend locally on [127.0.0.1](127.0.0.1)
 
 ## 📥 User Inputs
 | Input                     | Description                          | Range                         |

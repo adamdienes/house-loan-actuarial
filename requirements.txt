@@ -1,0 +1,8 @@
+mercury
+random
+csv
+pandas
+numpy
+joblib
+matplotlib
+scikit-learn
