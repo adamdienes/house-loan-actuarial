@@ -10,6 +10,9 @@ This Jupyter Notebook provides an **interactive frontend** for users and adminis
 - **Actuarial Calculations**: Uses mortality tables and annuity factors to assess financial risks.
 - **Supports Multiple Currencies**: EUR, USD, GBP.
 - **Detailed Output**: Monthly payments, total interest, amortization schedule, and actuarial risk factors.
+- **Model Download & Reuse:** Users can download the trained model and later reupload/reuse it in the platform.
+- **Detailed View Toggle:** Users can toggle a detailed view to see more calculations.
+- **Source Code Access:** Option to view the source code for transparency and customization.
 
 ---
 
@@ -29,18 +32,20 @@ pip install -r requirements.txt
 mercury run
 ```
 
-You can access the Mercury frontend locally on [127.0.0.1](127.0.0.1)
+You can access the Mercury frontend locally on [127.0.0.1:8000](http://127.0.0.1:8000/)
 
 ## 📥 User Inputs
-| Input                     | Description                          | Range                         |
-|---------------------------|--------------------------------------|-------------------------------|
-| Age (Years)               | Borrower's age                       | 18 -                      |
-| Loan Amount               | Principal loan amount                | 0 -             |
-| Yearly Interest Rate (%)  | Annual interest rate                 | 0.0 - 100.0                   |
-| Maturity (Years)          | Loan term in years                   | 1 - 50                        |
-| Mortality Table           | Select from TD88-90 or TH00-02 (France) |                       |
-| Currency                  | Choose between EUR, USD, GBP         |                         |
-| Admin Mode (Optional)     | Number of Random Contracts           | 1 - 1000                      |
+| Input                          | Description                             | Range        |
+|--------------------------------|-----------------------------------------|--------------|
+| Age (Years)                    | Borrower's age                          | 18 -         |
+| Loan Amount                    | Principal loan amount                   | 0 -          |
+| Yearly Interest Rate (%)       | Annual interest rate                    | 0.0 - 100.0  |
+| Maturity (Years)               | Loan term in years                      | 1 - 50       |
+| Mortality Table                | Select from TD88-90 or TH00-02 (France) |              |
+| Currency                       | Choose between EUR, USD, GBP            |              |
+| Upload model (Optional)        | Upload models to evaluate predictions.  | 3x .pkl file |
+| Admin Mode (Optional)          | Number of Random Contracts              | 1 - 1000     |
+| Download trained model (Admin) | Download trained models in .pkl format  |              |
 
 ## 📤 Output & Results
 ### Monthly Payment Calculation:
